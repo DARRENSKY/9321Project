@@ -11,21 +11,25 @@
             font-size:50px;
             color:#cc0066;
             text-align:center;
-            margin-top:100px;
+        }
+        h2 {
+            font-size:20px;
+            color:#8e0811;
+            margin-top:50px;
+            margin-left:250px;
         }
         .select_1 {
-            margin-left:300px;
-            margin-top: 20px;
+            margin-left:350px;
         }
         .select_2 {
             margin-left:50px;
         }
         .input_1 {
-            margin-left:50px;
-            width:100px;
+            margin-left:750px;
         }
         .input_2 {
-            margin-left:850px;
+            margin-left:50px;
+            width:100px;
         }
         .back {
              margin-left:50px;
@@ -38,6 +42,7 @@
         <input type="submit" value="Back">
     </form>
     <h1>Investment</h1>
+    <h2>Method #1: Top 5 Return Rate</h2>
     <form action="/investment/search">
         <select name="building_type" class="select_1">
             <option value="all">---Type---</option>
@@ -70,8 +75,19 @@
             <option value=1800000>1,800,000</option>
             <option value=2000000>2,000,000</option>
         </select>
-        <input name="area" type="text" value="LGA" class="input_1"><br>
-        <input type="submit" value="Search" class="input_2">
+        <br>
+        <input type="submit" value="Search" class="input_1">
+    </form>
+    <h2>Method #2: Info Of Specific Area</h2>
+    <form action="/investment/search">
+        <select name="building_type" class="select_1">
+            <option value="all">---Type---</option>
+            <option value="house">House</option>
+            <option value="unit">Unit</option>
+        </select>
+        <input name="area" type="text" value="LGA" class="input_2">
+        <br>
+        <input type="submit" value="Search" class="input_1">
     </form>
 </body>
 </html>

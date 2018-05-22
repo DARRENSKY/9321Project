@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Results</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        .plot_1 {
+            position:absolute;
+            margin-top:50px;
+            margin-left:80px;
+            width:500px;
+        }
+        .plot_2 {
+            position:absolute;
+            margin-top:50px;
+            margin-left:640px;
+            width:500px;
+        }
+        .plot_3 {
+            position:absolute;
+            margin-top:500px;
+            margin-left:80px;
+            width:500px;
+        }
+        .back {
+             margin-left:50px;
+             margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/investment/homepage" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <div class="plot_1">
+        {{plot_1}}
+    </div>
+    <div class="plot_2">
+        {{plot_2}}
+    </div>
+    <div class="plot_3">
+        {{plot_3}}
+    </div>
+</body>
+</html>
