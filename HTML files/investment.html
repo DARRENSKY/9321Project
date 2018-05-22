@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        h1 {
+            font-size:50px;
+            color:#cc0066;
+            text-align:center;
+            margin-top:100px;
+        }
+        .select_1 {
+            margin-left:300px;
+            margin-top: 20px;
+        }
+        .select_2 {
+            margin-left:50px;
+        }
+        .input_1 {
+            margin-left:50px;
+            width:100px;
+        }
+        .input_2 {
+            margin-left:850px;
+        }
+        .back {
+             margin-left:50px;
+             margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <h1>Investment</h1>
+    <form action="/investment/search">
+        <select name="type" class="select_1">
+            <option value="all">---Type---</option>
+            <option value="house">House</option>
+            <option value="unit">Unit</option>
+        </select>
+        <select name="min_price" class="select_2">
+            <option value=0>----Min----</option>
+            <option value=200000>200,000</option>
+            <option value=400000>400,000</option>
+            <option value=600000>600,000</option>
+            <option value=800000>800,000</option>
+            <option value=1000000>1,000,000</option>
+            <option value=1200000>1,200,000</option>
+            <option value=1400000>1,400,000</option>
+            <option value=1600000>1,600,000</option>
+            <option value=1800000>1,800,000</option>
+            <option value=2000000>2,000,000</option>
+        </select>
+        <select name="max_price" class="select_2">
+            <option value=2000000>----Max----</option>
+            <option value=200000>200,000</option>
+            <option value=400000>400,000</option>
+            <option value=600000>600,000</option>
+            <option value=800000>800,000</option>
+            <option value=1000000>1,000,000</option>
+            <option value=1200000>1,200,000</option>
+            <option value=1400000>1,400,000</option>
+            <option value=1600000>1,600,000</option>
+            <option value=1800000>1,800,000</option>
+            <option value=2000000>2,000,000</option>
+        </select>
+        <input name="area" type="text" value="LGA" class="input_1"><br>
+        <input type="submit" value="Search" class="input_2">
+    </form>
+</body>
+</html>
