@@ -43,7 +43,7 @@
     </form>
     <h1>Investment</h1>
     <h2>Method #1: Top 5 Return Rate</h2>
-    <form action="/investment/search">
+    <form action="/investment/search_method_1">
         <select name="building_type" class="select_1">
             <option value="all">---Type---</option>
             <option value="house">House</option>
@@ -79,13 +79,66 @@
         <input type="submit" value="Search" class="input_1">
     </form>
     <h2>Method #2: Info Of Specific Area</h2>
-    <form action="/investment/search">
+    <form action="/investment/search_method_2">
         <select name="building_type" class="select_1">
             <option value="all">---Type---</option>
             <option value="house">House</option>
             <option value="unit">Unit</option>
         </select>
-        <input name="area" type="text" value="LGA" class="input_2">
+        <select name="area" class="select_2">
+            <option value='NSW'>--------LGA--------</option>
+            <option value='Ashfield'>Ashfield</option>
+            <option value='Auburn'>Auburn</option>
+            <option value='Bankstown'>Bankstown</option>
+            <option value='Blacktown'>Blacktown</option>
+            <option value='Blue Mountains'>Blue Mountains</option>
+            <option value='Botany Bay'>Botany Bay</option>
+            <option value='Burwood'>Burwood</option>
+            <option value='Camden'>Camden</option>
+            <option value='Campbelltown'>Campbelltown</option>
+            <option value='Canada Bay'>Canada Bay</option>
+            <option value='Canterbury'>Canterbury</option>
+            <option value='Cessnock'>Cessnock</option>
+            <option value='Fairfield'>Fairfield</option>
+            <option value='Gosford'>Gosford</option>
+            <option value='Hawkesbury'>Hawkesbury</option>
+            <option value='Holroyd'>Holroyd</option>
+            <option value='Hornsby'>Hornsby</option>
+            <option value='Hunters Hill'>Hunters Hill</option>
+            <option value='Hurstville'>Hurstville</option>
+            <option value='Kiama'>Kiama</option>
+            <option value='Kogarah'>Kogarah</option>
+            <option value='Ku-Ring-Gai'>Ku-Ring-Gai</option>
+            <option value='Lake Macquarie'>Lake Macquarie</option>
+            <option value='Lane Cove'>Lane Cove</option>
+            <option value='Leichhardt'>Leichhardt</option>
+            <option value='Liverpool'>Liverpool</option>
+            <option value='Maitland'>Maitland</option>
+            <option value='Manly'>Manly</option>
+            <option value='Marrickville'>Marrickville</option>
+            <option value='Mosman'>Mosman</option>
+            <option value='Newcastle'>Newcastle</option>
+            <option value='North Sydney'>North Sydney</option>
+            <option value='Parramatta'>Parramatta</option>
+            <option value='Penrith'>Penrith</option>
+            <option value='Pittwater'>Pittwater</option>
+            <option value='Port Stephens'>Port Stephens</option>
+            <option value='Randwick'>Randwick</option>
+            <option value='Rockdale'>Rockdale</option>
+            <option value='Ryde'>Ryde</option>
+            <option value='Shellharbour'>Shellharbour</option>
+            <option value='Strathfield'>Strathfield</option>
+            <option value='Sutherland Shire'>Sutherland Shire</option>
+            <option value='Sydney'>Sydney</option>
+            <option value='The Hills Shire'>The Hills Shire</option>
+            <option value='Warringah'>Warringah</option>
+            <option value='Waverley'>Waverley</option>
+            <option value='Willoughby'>Willoughby</option>
+            <option value='Wollondilly'>Wollondilly</option>
+            <option value='Wollongong'>Wollongong</option>
+            <option value='Woollahra'>Woollahra</option>
+            <option value='Wyong'>Wyong</option>
+        </select>
         <br>
         <input type="submit" value="Search" class="input_1">
     </form>

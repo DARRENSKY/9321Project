@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Results</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        .back {
+            margin-left:50px;
+            margin-top:50px;
+        }
+        .title_1 {
+            position:absolute;
+            margin-top:120px;
+            margin-left:230px;
+        }
+        .title_2 {
+            position:absolute;
+            margin-top:120px;
+            margin-left:730px;
+        }
+        .table_1 {
+            position:absolute;
+            margin-top:150px;
+            margin-left:150px;
+        }
+        .table_2 {
+            position:absolute;
+            margin-top:150px;
+            margin-left:650px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 350px;
+            background-color:white;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <form action="/investment/homepage" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <h2 class="title_1">Top 5 (2006 - 2016)</h2>
+    <h2 class="title_2">Top 5 (2014 - 2016)</h2>
+    <div class="table_1">
+        {{table_10yrs}}
+    </div>
+    <div class="table_2">
+        {{table_3yrs}}
+    </div>
+</body>
+</html>
