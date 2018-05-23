@@ -45,10 +45,6 @@ def type_and_price(type = 'all', minprice = 0, maxprice = 100000000):
         for j in i:
             result_3.append(j)
     result = []
-    result.append(result_10[:10])
-    result.append(result_3[:10])
+    result.append(result_10[:15])
+    result.append(result_3[:15])
     return result
-
-
-
-
