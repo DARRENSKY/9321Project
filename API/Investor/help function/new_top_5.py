@@ -5,7 +5,7 @@ from operator import itemgetter
 from return_rate import return_rate
 #sale need to mul 10
 
-def type_and_price_tenyears(type = 'all', minprice = 600000, maxprice = 100000000):
+def type_and_price_tenyears(type = 'all', minprice = 0, maxprice = 100000000):
     connect(host='mongodb://9321project:9321project@ds229690.mlab.com:29690/9321project')
     minprice = minprice/1000
     maxprice = maxprice/1000
