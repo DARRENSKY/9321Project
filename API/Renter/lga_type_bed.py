@@ -20,6 +20,5 @@ def lga_type_bed(lga='NSW', type='all', bed='all'):
             wanted_lga.append(data[-3][1])
             wanted_lga.append(data[-2][1])
             wanted_lga.append(data[-1][1])
+    return wanted_lga
 
-
-print(lga_type_bed())
