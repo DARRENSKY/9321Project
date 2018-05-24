@@ -13,7 +13,7 @@ def type_bed_price(type = 'all', bed = 'all', minprice = 0, maxprice = 10000000)
         data = list(data.items())
         data = (data[-1][1] + data[-2][1] + data[-3][1] + data[-4][1])/4 #the average
         if maxprice >= data >= minprice:
-            wanted_lga.append((i['lga'], data))
+            wanted_lga.append((i['lga'], int(data)))
 
     wanted_lga = sorted(wanted_lga, key = itemgetter(1), reverse= True)
 
@@ -21,9 +21,13 @@ def type_bed_price(type = 'all', bed = 'all', minprice = 0, maxprice = 10000000)
     for i in wanted_lga:
         for j in i:
             result_bed_10.append(j)
-    return result_bed_10[:20]
+    process_result=result_bed_10[:20]
 
-
-
+    index=0
+    for i in process_result:
+        if index %2!=0:
+            process_result[index]="$ "+str(process_result[index])
+        index+=1
+    return process_result
 
 # print(type_bed_price(type="unit",bed="one",minprice=400,maxprice=800))
