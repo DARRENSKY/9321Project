@@ -16,8 +16,14 @@ def type_bed_price(type = 'all', bed = 'all', minprice = 0, maxprice = 10000000)
             wanted_lga.append((i['lga'], data))
 
     wanted_lga = sorted(wanted_lga, key = itemgetter(1), reverse= True)
-    return wanted_lga[:10]
+
+    result_bed_10 = []
+    for i in wanted_lga:
+        for j in i:
+            result_bed_10.append(j)
+    return result_bed_10[:20]
 
 
 
-print(type_bed_price())
+
+# print(type_bed_price(type="unit",bed="one",minprice=400,maxprice=800))
