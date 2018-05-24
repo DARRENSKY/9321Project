@@ -68,6 +68,14 @@ def save_data():
         connect(host='mongodb://9321project:9321project@ds229690.mlab.com:29690/9321project')
         t1.save()
 
+    for i in range(59,60):
+        unit_dict = save_data_unit(i)
+        house_dict = save_data_house(i)
+        all_dict = save_data_all(i)
+        t1 = Dwellings(lga="NSW", unit=unit_dict, house=house_dict, all=all_dict)
+        connect(host='mongodb://9321project:9321project@ds229690.mlab.com:29690/9321project')
+        t1.save()
+
 
 save_data()
 
