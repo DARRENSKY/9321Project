@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Results</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        h2 {
+            font-size:40px;
+            color:#cc0066;
+            text-align:center;
+        }
+        .back {
+            margin-left:50px;
+            margin-top:50px;
+        }
+        .table_1 {
+            margin-top:50px;
+            margin-left:450px;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 300px;
+            background-color:white;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        th {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <form action="/rental/homepage" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <h2>Top 10 Recommendations</h2>
+    <div class="table_1">
+        {{table_top_10}}
+    </div>
+</body>
+</html>

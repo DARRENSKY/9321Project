@@ -3,8 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <title>Rental</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        h1 {
+            font-size:50px;
+            color:#cc0066;
+            text-align:center;
+        }
+        h2 {
+            font-size:20px;
+            color:#8e0811;
+            margin-left:250px;
+        }
+        .select_1 {
+            margin-left:350px;
+        }
+        .select_2 {
+            margin-left:30px;
+        }
+        .input_1 {
+            margin-top:50px;
+            margin-left:750px;
+        }
+        .back {
+             margin-left:50px;
+             margin-top:50px;
+        }
+    </style>
 </head>
 <body>
-
+    <form action="/" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <h1>Rental</h1>
+    <h2>Method #1: Top 10 Recommendations</h2>
+    <form action="/rental/search_method_1">
+        <select name="building_type" class="select_1">
+            <option value="all">---Type---</option>
+            <option value="house">House</option>
+            <option value="unit">Unit</option>
+        </select>
+        <select name="bedroom" class="select_2">
+            <option value="all">----Bedroom----</option>
+            <option value='one'>1 bedroom</option>
+            <option value='two'>2 bedrooms</option>
+            <option value='three'>3 bedrooms</option>
+        </select>
+        <select name="min_price" class="select_2">
+            <option value=200>---Min---</option>
+            <option value=200>200</option>
+            <option value=300>300</option>
+            <option value=400>400</option>
+            <option value=500>500</option>
+            <option value=600>600</option>
+            <option value=700>700</option>
+            <option value=800>800</option>
+            <option value=900>900</option>
+            <option value=1000>1,000</option>
+            <option value=1100>1,100</option>
+            <option value=1200>1,200</option>
+            <option value=1300>1,300</option>
+            <option value=1400>1,400</option>
+            <option value=1500>1,500</option>
+        </select>
+        <select name="max_price" class="select_2">
+            <option value=1500>---Max---</option>
+            <option value=200>200</option>
+            <option value=300>300</option>
+            <option value=400>400</option>
+            <option value=500>500</option>
+            <option value=600>600</option>
+            <option value=700>700</option>
+            <option value=800>800</option>
+            <option value=900>900</option>
+            <option value=1000>1,000</option>
+            <option value=1100>1,100</option>
+            <option value=1200>1,200</option>
+            <option value=1300>1,300</option>
+            <option value=1400>1,400</option>
+            <option value=1500>1,500</option>
+        </select>
+        <br>
+        <input type="submit" value="Search" class="input_1">
+    </form>
+    <h2>Method #2: Info Of Specific Area</h2>
+    <form action="/rental/search_method_2">
+        <select name="building_type" class="select_1">
+            <option value="all">---Type---</option>
+            <option value="house">House</option>
+            <option value="unit">Unit</option>
+        </select>
+        <select name="bedroom" class="select_2">
+            <option value="all">----Bedroom----</option>
+            <option value='one'>1 bedroom</option>
+            <option value='two'>2 bedrooms</option>
+            <option value='three'>3 bedrooms</option>
+        </select>
+        <select name="area" class="select_2">
+            <option value='NSW'>--------LGA--------</option>
+            <option value='Ashfield'>Ashfield</option>
+            <option value='Auburn'>Auburn</option>
+            <option value='Bankstown'>Bankstown</option>
+            <option value='Blacktown'>Blacktown</option>
+            <option value='Blue Mountains'>Blue Mountains</option>
+            <option value='Botany Bay'>Botany Bay</option>
+            <option value='Burwood'>Burwood</option>
+            <option value='Camden'>Camden</option>
+            <option value='Campbelltown'>Campbelltown</option>
+            <option value='Canada Bay'>Canada Bay</option>
+            <option value='Canterbury'>Canterbury</option>
+            <option value='Cessnock'>Cessnock</option>
+            <option value='Fairfield'>Fairfield</option>
+            <option value='Gosford'>Gosford</option>
+            <option value='Hawkesbury'>Hawkesbury</option>
+            <option value='Holroyd'>Holroyd</option>
+            <option value='Hornsby'>Hornsby</option>
+            <option value='Hunters Hill'>Hunters Hill</option>
+            <option value='Hurstville'>Hurstville</option>
+            <option value='Kiama'>Kiama</option>
+            <option value='Kogarah'>Kogarah</option>
+            <option value='Ku-Ring-Gai'>Ku-Ring-Gai</option>
+            <option value='Lake Macquarie'>Lake Macquarie</option>
+            <option value='Lane Cove'>Lane Cove</option>
+            <option value='Leichhardt'>Leichhardt</option>
+            <option value='Liverpool'>Liverpool</option>
+            <option value='Maitland'>Maitland</option>
+            <option value='Manly'>Manly</option>
+            <option value='Marrickville'>Marrickville</option>
+            <option value='Mosman'>Mosman</option>
+            <option value='Newcastle'>Newcastle</option>
+            <option value='North Sydney'>North Sydney</option>
+            <option value='Parramatta'>Parramatta</option>
+            <option value='Penrith'>Penrith</option>
+            <option value='Pittwater'>Pittwater</option>
+            <option value='Port Stephens'>Port Stephens</option>
+            <option value='Randwick'>Randwick</option>
+            <option value='Rockdale'>Rockdale</option>
+            <option value='Ryde'>Ryde</option>
+            <option value='Shellharbour'>Shellharbour</option>
+            <option value='Strathfield'>Strathfield</option>
+            <option value='Sutherland Shire'>Sutherland Shire</option>
+            <option value='Sydney'>Sydney</option>
+            <option value='The Hills Shire'>The Hills Shire</option>
+            <option value='Warringah'>Warringah</option>
+            <option value='Waverley'>Waverley</option>
+            <option value='Willoughby'>Willoughby</option>
+            <option value='Wollondilly'>Wollondilly</option>
+            <option value='Wollongong'>Wollongong</option>
+            <option value='Woollahra'>Woollahra</option>
+            <option value='Wyong'>Wyong</option>
+        </select>
+        <br>
+        <input type="submit" value="Search" class="input_1">
+    </form>
 </body>
 </html>

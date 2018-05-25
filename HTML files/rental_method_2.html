@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Results</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        h1 {
+            font-size:40px;
+            color:#cc0066;
+            text-align:center;
+        }
+        h2 {
+            font-size:20px;
+            text-align:center;
+        }
+        .back {
+            margin-left:50px;
+            margin-top:50px;
+        }
+        .plot {
+            position:absolute;
+            margin-top:20px;
+            margin-left:120px;
+            width:500px;
+        }
+        .summary {
+            position:absolute;
+            margin-top:20px;
+            margin-left:680px;
+
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 400px;
+            height:400px;
+            background-color:white;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <form action="/rental/homepage" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <h1>{{lga}}</h1>
+    <h2>{{display_type}}</h2>
+    <div class="plot">
+        {{plot}}
+    </div>
+    <div class="summary">
+        {{sum_table}}
+    </div>
+</body>
+</html>

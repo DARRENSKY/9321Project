@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body {
+            background-color:#b3ecff;
+        }
+        .message {
+            margin-top:100px;
+            text-align:center;
+            font-size:40px;
+        }
+        .back {
+            margin-left:50px;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/rental/homepage" class="back">
+        <input type="submit" value="Back">
+    </form>
+    <div class="message">
+        {{error_message}}
+    </div>
+</body>
+</html>
